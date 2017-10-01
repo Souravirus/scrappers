@@ -7,3 +7,4 @@ A collection of simple and cool scrapers made with Python and PHP.
 - cbseresultChecker - checks for new CBSE results this day.
 - resultNITH - scraps the results of students in the *National Institute of Technology in Hamirpur*
 - imdb_api - an API to get movie details from imdb
+- wallhaven - gets wallpapers from wallhaven
