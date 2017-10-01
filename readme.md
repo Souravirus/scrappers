@@ -1,5 +1,15 @@
-## Scrappers:
+## Synopsis
 
-These are some cool scrappers which are made from python and php feel free to contribute to them or giving new scrappers which are useful or not useful to anyone.
+These are some scrappers which are made with python and php.
 
-Don't forget to star my project if you feel its good.
+## The different scrappers
+
+**cbse Result:** Checks to see if on that day any new result has come.
+
+**a2ojExtractor:** Extracts the questions from a2oj.com and saves it as an .html file specified folder.
+
+**resultNITH** Scraps the results of students of NIT, Hamirpur.
+
+## Contributors
+
+Feel free to contribute to the current ones, or add any new scrappers that might be useful to someone.
