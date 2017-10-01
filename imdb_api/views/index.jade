@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p
+    | to fetch details goto 
+    span.api /api/{movie-keyword} 
+    <br>
+    <br><br>
+    | ex: 
+    span.api /api/inter

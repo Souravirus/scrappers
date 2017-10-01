@@ -1,0 +1,15 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.api {
+	background-color: #fd7013;
+	padding:5px;
+	text-align: center;
+	color:#ffe2ef;
+	border-radius: 4px;
+}
