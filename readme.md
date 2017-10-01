@@ -1,15 +1,8 @@
-## Synopsis
+# Scrappers
+A collection of simple and cool scrapers made with Python and PHP.
+*Feel free to contribute new scrapers and :star: the repository.*
 
-These are some scrappers which are made with python and php.
-
-## The different scrappers
-
-**cbse Result:** Checks to see if on that day any new result has come.
-
-**a2ojExtractor:** Extracts the questions from a2oj.com and saves it as an .html file in specified folder.
-
-**resultNITH** Scraps the results of students of NIT, Hamirpur.
-
-## Contributors
-
-Feel free to contribute to the current ones or add any new scrappers that might be useful to someone.
+## Available scrapers
+- a2ojExtractor - extracts the question in the site [a2oj](https://a2oj.com/) and saves it as a html file in specified folder.
+- cbseresultChecker - checks for new results this day.
+- resultNITH - scraps the results of students in the *National Institute of Technology in Hamirpur*
