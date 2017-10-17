@@ -8,3 +8,4 @@ A collection of simple and cool scrapers made with Python and PHP.
 - resultNITH - scraps the results of students in the *National Institute of Technology in Hamirpur*
 - imdb_api - an API to get movie details from imdb
 - wallhaven - gets wallpapers from wallhaven
+- carlistScrapper - a crawler that crawls carlist.com.my to collect car's data and save it as csv
