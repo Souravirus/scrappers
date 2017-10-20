@@ -2,13 +2,10 @@ import urllib.request
 import os
 from bs4 import BeautifulSoup
 
-#how many wallpapers to download
-limit = 15
+#ask user how many wallpapers to download
+limit = int(input('Number of wallpapers to download: '))
 
-#include general/anime/people categories, 0 = disabled, 1 = enabled
-general = 1
-anime = 1
-people = 0
+
 
 #allowed aspect ratios: 4x3, 5x4, 16x9, 16x10, 21x9, 32x9, 48x9, 9x16, 10x16
 ratios = ["16x9", "16x10"]
@@ -17,9 +14,17 @@ count = 1
 if not os.path.exists("wallpapers"):
     os.makedirs("wallpapers")
 
-while count < limit:
+#ask user to include general/anime/people categories, 0 = disabled, 1 = enabled
+general = 1 if input('Include "General" category (y/n): ') == 'y' else 0
+anime = 1 if input('Include "Anime" category (y/n): ') == 'y' else 0
+people = 1 if input('Include "People" category (y/n): ') == 'y' else 0
+
+#ask for purity of wallpapers
+purity = 100 if input('Include NSFW filtering (y/n): ') == 'y' else 110
+
+while count <= limit:
     
-    url = "https://alpha.wallhaven.cc/search?categories={}{}{}&purity=100&ratios={}&sorting=random&order=desc".format(general, anime, people, "%2C".join(ratios))
+    url = "https://alpha.wallhaven.cc/search?categories={}{}{}&purity={}&ratios={}&sorting=random&order=desc".format(general, anime, people, purity, "%2C".join(ratios))
 
     req = urllib.request.Request(url)
     req.add_header('User-agent', 'Mozilla/')
