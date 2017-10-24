@@ -4,9 +4,9 @@ from bs4 import BeautifulSoup
 from sys import argv, exit
 
 class Student:
-    #set base year as current year
+    #set base year as current year ie 17 for 2017
     base_year = 17
-    try:
+    try:#you can comment this if not using proxy server
         proxyDict = {
                     'http_proxy': environ['http_proxy'],
                     'https_proxy': environ['https_proxy'],
