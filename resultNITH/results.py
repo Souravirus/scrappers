@@ -4,9 +4,9 @@ from bs4 import BeautifulSoup
 from sys import argv, exit
 
 class Student:
-    #set base year as current year
+    #set base year as current year ie 17 for 2017
     base_year = 17
-    try:
+    try:#you can comment this if not using proxy server
         proxyDict = {
                     'http_proxy': environ['http_proxy'],
                     'https_proxy': environ['https_proxy'],
@@ -46,10 +46,10 @@ class Student:
         out = self.name + "\n\t" + self.sgpa + "\n\t" +self.points+ "\n\t" + self.cgpa
         return out
 
-if(len(argv)==2):
+if(len(argv)==2):#for commandline arguments
     roll=argv[1]
 else:
-    print("enter ur roll : ",end='')
+    print("enter ur roll : ",end='')#for simple input
     roll = str(input())
 
 std = Student(roll)
@@ -79,10 +79,14 @@ if(ans=='y'):
             data.append(std)
             print(std.display_result())
             print()
-    data.sort(key=sort_std,reverse=True)
-    print("sorting....\n\n\n")
-    for item in data:
-        print(item.display_result())
-        print()
+            
+    print("do you want relult of whole class y or n : ",end='')
+    ansd = input()
+    if(ansd=='y'):
+        data.sort(key=sort_std,reverse=True)
+        print("sorting....\n\n\n")
+        for item in data:
+            print(item.display_result())
+            print()
 
 
